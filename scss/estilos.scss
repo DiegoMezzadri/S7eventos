@@ -230,14 +230,14 @@ footer{
 		padding: 40px, 0;
 		overflow: hidden;
 	}	
-		.galeria a{
+		a{
 			display: block;
 			position: relative;
 			overflow: hidden;
 			box-shadow: 0 0 6px rgba(0,0,0,.5);
 		}
 
-		.galeria img{
+		img{
 			width: 100%;
 			vertical-align: top;
 			height: 300px;
@@ -246,7 +246,7 @@ footer{
 
 		}
 
-		.galeria a:hover img{
+		a:hover img{
 			filter: blur(2px);
 			transform: rotate(-10deg) scale(1.2);
 			
@@ -255,3 +255,46 @@ footer{
 
 }
 
+.carrusel{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	z-index: 100;
+	transform: scale(0);
+	transition: transform 0.5s ease-in-out;
+	img{
+		max-width:75%;
+		max-height: 75%;
+	}
+	.siguiente{
+		display: block;
+		background-color: black;
+		height: 30px;
+		width: 30px;
+		text-decoration: none;
+		color: white;
+		text-align: center;
+	}
+	.cerrar{
+		display: block;
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		height: 30px;
+		width: 30px;
+		background-color: black;
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		border-radius: 50%;
+	}
+
+}
+
+.carrusel:target{
+		cursor: pointer;
+		transform: scale(1);
+	}
