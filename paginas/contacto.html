@@ -13,27 +13,29 @@
 	<header id=backgroundHeader class="container-fluid px-0 mgx-0">
 		<div class="principal container-fluid d-flex h-100 align-items-center p-0 m-0">
 			<nav class="container-fluid navbar navbar-expand-lg navbar-light">
-			  <a class="navbar-brand" href="../index.html"><img class="rounded-circle" src="../media/s7logo2.png" alt="Logo Institucional"></a>
+			  <a class="navbar-brand" href="../index.html">
+			  	<img class="rounded-circle" src="../media/s7logo2.png" alt="Logo Institucional">
+			  </a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 			    <ul class="navbar-nav font-size-large text-center p-0 m-0">
-			      <li class="nav-item">
+			     	<li class="nav-item">
 				        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item">
+				    </li>
+				    <li class="nav-item">
 				        <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
-				      </li>
-				      <li class="nav-item">
+				    </li>
+				    <li class="nav-item">
 				        <a class="nav-link" href="../paginas/productos.html">Productos</a>
-				      </li>
-				      <li class="nav-item">
+				    </li>
+				    <li class="nav-item">
 				        <a class="nav-link" href="../paginas/galeria.html">Galeria<span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item active">
+				    </li>
+				    <li class="nav-item active">
 				        <a class="nav-link" href="../paginas/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
-				      </li>
+				    </li>
 			    </ul>
 			  </div>
 			</nav>
@@ -42,53 +44,52 @@
 	<section class="contacto col-8 d-flex h-100 row justify-content-center px-3 py-3 m-auto">
 			<form action="recibe.html" method="GET" enctype="multipart/form-data">
 				<div>
-				  <div class="form-row">
-				    <div class="col-md-6 mb-3">
-				      <label for="validationDefault01">Nombre</label>
-				      <input type="text" class="form-control" id="validationDefault01" value="Ingrese su Nombre" required>
-				    </div>
-				    <div class="col-md-6 mb-3">
-				      <label for="validationDefault02">Apellido</label>
-				      <input type="text" class="form-control" id="validationDefault02" value="Ingrese su Apellido" required>
-				    </div>
-				  </div>
-				  <div class="form-row">
-				    <div class="col-md-6 mb-3">
-				      <label for="validationDefault03">Ciudad</label>
-				      	<select class="form-control">
-				      		<option>Capital Federal</option>
-	  						<option>Gran Buenos Aires</option>
-	  					</select>
-				    </div>
-				    <div class="col-md-6 mb-3">
-				      <label for="validationDefault03">Email</label>
-				      <input type="email" class="form-control" id="validationDefault02" value="ejemplo@mail.com" required>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlTextarea1">Ingrese su consulta</label>
-				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				  </div>
-	  				 <button type="button" class="container-fluid btn btn-success" data-toggle="modal" data-target="#exampleModal">Enviar consulta
-	  				 </button>
+				  	<div class="form-row">
+				    	<div class="col-md-6 mb-3">
+				      		<label for="validationDefault01">Nombre</label>
+				      		<input type="text" class="form-control" id="validationDefault01" value="Ingrese su Nombre" required>
+				    	</div>
+				   		<div class="col-md-6 mb-3">
+				      		<label for="validationDefault02">Apellido</label>
+				      		<input type="text" class="form-control" id="validationDefault02" value="Ingrese su Apellido" required>
+				    	</div>
+					</div>
+				  	<div class="form-row">
+				    	<div class="col-md-6 mb-3">
+				      		<label for="validationDefault03">Ciudad</label>
+				      		<select class="form-control">
+				      			<option>Capital Federal</option>
+	  							<option>Gran Buenos Aires</option>
+	  						</select>
+				   		</div>
+				    	<div class="col-md-6 mb-3">
+				      		<label for="validationDefault03">Email</label>
+				     		 <input type="email" class="form-control" id="validationDefault02" value="ejemplo@mail.com" required>
+				    	</div>
+				 	</div>
+				 	<div class="form-group">
+				   		<label for="exampleFormControlTextarea1">Ingrese su consulta</label>
+				    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  	</div>
+	  				<button type="button" class="container-fluid btn btn-success" data-toggle="modal" data-target="#exampleModal">Enviar consulta</button>
 	  			</div>
 	  				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						  <div class="modal-dialog modal-dialog-centered">
+						<div class="modal-dialog modal-dialog-centered">
 						    <div class="modal-content rounded-0">
-						      <div class="modal-header">
-						        <h5 class="modal-title" id="exampleModalLabel">S7 EVENTOS</h5>
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						          <span aria-hidden="true">&times;</span>
-						        </button>
-						      </div>
-						      <div class="modal-body">
-						       Gracias por su consulta, nos contactaremos a la brevedad!
-						      </div>
-						      <div class="modal-footer d-flex flex-row">
-						        <button type="button" class="container-fluid btn btn-dark rounded-pill" data-dismiss="modal">Cerrar</button>
-						       </div>
+						      	<div class="modal-header">
+						        	<h5 class="modal-title" id="exampleModalLabel">S7 EVENTOS</h5>
+						        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          		<span aria-hidden="true">&times;</span>
+						   			</button>
+						        </div>
+							    <div class="modal-body">
+							       Gracias por su consulta, nos contactaremos a la brevedad!
+							    </div>
+							    <div class="modal-footer d-flex flex-row">
+						        	<button type="button" class="container-fluid btn btn-dark rounded-pill" data-dismiss="modal">Cerrar</button>
+						        </div>
 						    </div>
-						  </div>
+						 </div>
 					</div>
 			</form>
 	</section>

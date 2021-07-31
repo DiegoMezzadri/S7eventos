@@ -285,6 +285,11 @@ footer{
 	z-index: 100;
 	transform: scale(0);
 	transition: transform 0.5s ease-in-out;
+	.carrusel:target{
+		cursor: pointer;
+		transform: scale(1);
+	}
+
 	img{
 		max-width:75%;
 		max-height: 75%;
@@ -319,10 +324,6 @@ footer{
 
 }
 
-.carrusel:target{
-		cursor: pointer;
-		transform: scale(1);
-}
 
 .menuActivo{
 	font-size: 20px;
